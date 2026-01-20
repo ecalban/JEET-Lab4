@@ -7,7 +7,7 @@ package wat.jeet.lab4;
 import javax.ejb.Stateless;
 
 @Stateless
-public class StatelessCalculator {
+public class StatelessCalculator implements StatefulCalculatorLocal, StatefulCalculatorRemote {
 
     public String calculate(int a, int b) {
         try {

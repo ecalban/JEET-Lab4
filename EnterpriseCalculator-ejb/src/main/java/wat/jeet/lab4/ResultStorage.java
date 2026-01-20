@@ -4,7 +4,7 @@
  */
 package wat.jeet.lab4;
 
-import javax.ejb.Singleton;
+import jakarta.ejb.Singleton;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -3,11 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/ejb-jar_4_0.xsd"
          version="4.0">
-    
+
     <enterprise-beans>
         <session>
             <ejb-name>StatelessCalculator</ejb-name>
             <mapped-name>ejb/StatelessCalculator</mapped-name>
+            <business-local>wat.jeet.lab4.StatelessCalculatorLocal</business-local>
+            <business-remote>wat.jeet.lab4.StatelessCalculatorRemote</business-remote>
             <ejb-class>wat.jeet.lab4.StatelessCalculator</ejb-class>
             <session-type>Stateless</session-type>
             <transaction-type>Container</transaction-type>
@@ -16,6 +18,8 @@
         <session>
             <ejb-name>StatefulCalculator</ejb-name>
             <mapped-name>ejb/StatefulCalculator</mapped-name>
+            <business-local>wat.jeet.lab4.StatefulCalculatorLocal</business-local>
+            <business-remote>wat.jeet.lab4.StatefulCalculatorRemote</business-remote>
             <ejb-class>wat.jeet.lab4.StatefulCalculator</ejb-class>
             <session-type>Stateful</session-type>
             <transaction-type>Container</transaction-type>
@@ -24,6 +28,7 @@
         <session>
             <ejb-name>ResultStorage</ejb-name>
             <mapped-name>ejb/ResultStorage</mapped-name>
+            <business-remote>wat.jeet.lab4.ResultStorageRemote</business-remote>
             <ejb-class>wat.jeet.lab4.ResultStorage</ejb-class>
             <session-type>Singleton</session-type>
             <transaction-type>Container</transaction-type>

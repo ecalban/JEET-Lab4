@@ -7,7 +7,7 @@ package wat.jeet.lab4;
 import javax.ejb.Stateful;
 
 @Stateful
-public class StatefulCalculator {
+public class StatefulCalculator implements StatefulCalculatorLocal, StatefulCalculatorRemote {
 
     // Bu değişken her kullanıcıya özeldir ve oturum boyunca saklanır
     private int counter = 0;

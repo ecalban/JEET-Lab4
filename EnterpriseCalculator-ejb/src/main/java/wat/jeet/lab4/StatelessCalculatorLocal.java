@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/J2EE/EJB40/SessionLocal.java to edit this template
  */
 package wat.jeet.lab4;
-import javax.ejb.Local;
+import jakarta.ejb.Local;
 
 @Local
 public interface StatelessCalculatorLocal {

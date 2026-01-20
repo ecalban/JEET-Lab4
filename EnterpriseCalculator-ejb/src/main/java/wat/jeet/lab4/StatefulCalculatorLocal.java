@@ -4,7 +4,7 @@
  */
 package wat.jeet.lab4;
 
-import javax.ejb.Local;
+import jakarta.ejb.Local;
 
 @Local // Bu anotasyon yerel erişim için zorunludur
 public interface StatefulCalculatorLocal {
