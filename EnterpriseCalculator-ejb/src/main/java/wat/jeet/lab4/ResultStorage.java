@@ -4,17 +4,23 @@
  */
 package wat.jeet.lab4;
 
-import jakarta.ejb.Singleton;
-import jakarta.ejb.LocalBean;
+import javax.ejb.Singleton;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- *
- * @author Student
- */
 @Singleton
-@LocalBean
 public class ResultStorage {
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
+    // Tüm hesaplama sonuçlarını saklayacağımız liste
+    private List<CalculationResult> results = new ArrayList<>();
+
+    // Yeni bir sonucu listeye eklemek için
+    public void addResult(CalculationResult res) {
+        results.add(res);
+    }
+
+    // Mevcut tüm sonuçları web tarafına (JSF) göndermek için
+    public List<CalculationResult> getAllResults() {
+        return results;
+    }
 }
